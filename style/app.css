@@ -1,0 +1,144 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+article.card {
+  background-color: #31354e;
+  border-radius: 10px;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  box-shadow: 7px 9px 20px 0px #303450e2;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /*para que pase a la mano izquierda*/
+}
+
+.header_icon {
+  width: 25px;
+}
+
+.me {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /*mejora la imagen cuando le colocamos alto y ancho*/
+  border-radius: 50%;
+  box-shadow: 7px 9px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  font-size: 27px;
+  color: #f5f5f5;
+  font-weight: 500;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+.article_subtitle {
+  color: #f5f5f59a;
+  margin: 0 0 0 0;
+}
+p {
+  color: #f5f5f5;
+  width: 60%; /*centrado y que se ajuste en el tamaño de la pantalla*/
+  text-align: center; /*centrado y que se ajuste en el tamaño de la pantalla*/
+  line-height: 1.4; /*espacio entre el p*/
+}
+
+button {
+  font-size: 15px; /*cambiar tamaño de fuente*/
+  padding: 9px 30px;
+  border-radius: 25px; /*redondear las esquinas*/
+  border: none; /*quitar el border*/
+  background: rgb(174, 37, 98);
+  background: rgb(122, 123, 213);
+  background: linear-gradient(
+    90deg,
+    rgba(122, 123, 213, 1) 1%,
+    rgba(164, 81, 163, 1) 32%,
+    rgba(174, 37, 98, 1) 89%
+  ); /*degradado*/
+  color: #f5f5f5;
+}
+
+hr {
+  width: 90%;
+  margin: 20px 0;
+  border: solid 1px #424766;
+}
+
+section {
+  gap: 20px;
+  display: flex; /*colocar artículos del lado del otro*/
+  width: 100%;
+}
+
+section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 130px;
+}
+
+section article p {
+  font-size: 19px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.item_footer {
+  font-size: 11px;
+  color: #f5f5f56d;
+}
+
+section article:nth-child(1) a {
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 8%,
+    rgba(252, 70, 252, 1) 71%
+  );
+}
+
+section article:nth-child(2) a {
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 20%,
+    rgba(70, 185, 252, 1) 60%,
+    rgba(70, 251, 252, 1) 90%
+  );
+}
+section article:nth-child(3) a {
+  background: rgb(37, 29, 45);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 29, 45, 1) 5%,
+    rgba(87, 74, 113, 1) 40%,
+    rgba(91, 73, 124, 1) 59%,
+    rgba(110, 61, 198, 1) 90%
+  );
+}
+
+section article a {
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 9px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+section article img {
+  width: 50px;
+}
